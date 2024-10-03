@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Artesanal con Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playpen+Sans:wght@100..800&family=Sofadi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        *{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        body{
+          font-family: 'Sofadi One', system-ui;
+        }
+        header .nav-wrapper{
+          padding: 0px 20px; 
+          height: 70px;
+        }
+        header .brand-logo{
+          text-shadow: 0px 0px 14px rgb(255, 255, 255);
+        }
+        header nav ul li a, .sidenav li a, .brand-logo{
+          font-size: 1.7rem;
+        }
+        main{
+            background-image: url(https://picsum.photos/id/307/5000/3333);
+            background-repeat: repeat;
+        }
+        main .container > h2{
+          text-align: center;
+          font-weight: 600;
+          padding: 40px 0 20px 0;
+          margin: 0;
+        }
+       
+        main .container .container-flex{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        main .container .col{
+            max-width: 425px;
+            height: 425px;
+            transition: transform 0.3s ease-in;
+        }
+        main .container .col:hover{
+            transform: scale(1.05);
+        }
+        main .container .card-action{
+            position: static !important;
+            border: 1px solid #c5c5c5;
+            margin: 0px -0.5px;
+        }
+        main .container .card-action p, .card-content p{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        @media (min-width: 768px) {
+            header .brand-logo{
+                font-size: 2.7rem;
+            }
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <div class="navbar-fixed grey darken-4">
+            <nav>
+                <div class="nav-wrapper grey darken-4">
+                  <a href="index.html" class="brand-logo">Sabor a Tegus</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="./index.html#historia">Historia</a></li>
+                    <li><a href="./menu.html#menu">Menú</a></li>
+                    <li><a href="./index.html#contactanos">Contáctanos</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="./index.html#historia">Historia</a></li>
+                <li><a href="./menu.html#menu">Menú</a></li>
+                <li><a href="./index.html#contactanos">Contáctanos</a></li>
+            </ul>
+    </header>
+    <main>
+        <div id="menu" class="container">
+            <h2 class="white-text">Menú</h2>
+            <div class="container-flex">
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Café Espresso</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Una bebida concentrada y fuerte, perfecta para los amantes del café puro.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Café Americano</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Un espresso diluido con agua caliente para un sabor más suave y elegante.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Capuchino</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Espresso con leche espumada, ideal para aquellos que prefieren un café más cremoso.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Latte</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Espresso con una mayor proporción de leche al vapor y un toque de espuma.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Mocha</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Una deliciosa combinación de café, chocolate y leche, a menudo cubierto con crema batida.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Té chai latte</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Té de especias mezclado con leche, una opción suave y aromática. Para darle gusto a tu paladar.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Smoothie de frutas</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Batidos frescos hechos con una mezcla de frutas naturales y yogur o leche.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Frappuccino</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Bebida fría de café mezclado con hielo y leche, a menudo con sabores añadidos como vainilla o caramelo.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Croissants</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Bollería francesa ligera y hojaldrada, perfecta para acompañar el café. Una excelente opción.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Muffins</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Pasteles individuales de diferentes sabores como arándano, chocolate o plátano.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Cheesecake</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Porciones de tartas dulces como cheesecake de frutos rojos o tarta de manzana.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Panini</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Sándwiches calientes prensados con opciones como jamón y queso, pollo con pesto, o vegetales asados.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Wraps</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Envolturas de tortilla con rellenos como pollo, vegetales o atún. La que elijas</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/429/5000/3334">
+                          <span class="card-title black-text">Ensaladas frescas</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Una opción saludable con ingredientes frescos como lechuga, pollo, quinoa o aguacate.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col hoverable">
+                      <div class="card small">
+                        <div class="card-image">
+                          <img src="https://picsum.photos/id/431/5000/3334">
+                          <span class="card-title white-text">Galletar artesanales</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Galletas recién horneadas de sabores como chispas de chocolate, avena o nuez.</p>
+                        </div>
+                        <div class="card-action white black-text">
+                            <p>Precio: <span>Lps. 70.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 center-align s12">
+              <h5 class="white-text center-align">Sabor a Tegus</h5>
+              <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          </div>
+        </div>
+    </footer>
+      <script src="./js/script_materialize.js"></script>
+</body>
+</html>
