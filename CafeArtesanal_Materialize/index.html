@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Artesanal con Materialize</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <style>
+        .nav-wrapper{
+            padding: 0px 16px;  
+        }
+
+        main .heroPanel img{
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+        }
+        main .card-small{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        main .card-small .circle{
+          width: 250px;
+          height: 250px;
+          border: 4px solid #fff;
+          border-radius: 50%;
+        }
+    </style>
+</head> 
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper brown darken-2">
+                  <a href="#!" class="brand-logo">Sabor a Tegus</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="#contactanos">Contáctanos</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="#contactanos">Contáctanos</a></li>
+            </ul>
+    </header>
+    <main>
+      <div class="heroPanel">
+        <picture>
+          <source srcset="../assets/imgs/coffee-lg-banner.jpg" media="(min-width: 1024px)">
+          <source srcset="../assets/imgs/coffee-md-banner.jpg" media="(min-width: 768px)">
+          <img src="../assets/imgs/coffee-sm-banner.jpg" alt="Imgaen de cafe">
+        </picture>
+        <div class="card-small">
+            <div class="row">
+                <div class="col s12 m7">
+                  <div class="card transparent">
+                    <div class="card-content center-align ">
+                      <img class="circle" src="../assets/imgs/coffee-hero-img.jpg" alt="Imagen producto cafe">
+                      <h5 class="white-text z-depth-te-4">50 años de historia, pasión y Café</h5>
+                      <p class="white-text">Desde 1974, servimos el mejor café hecho con pasión, acompañado de nuestro legado en cada taza. Un café con tradición, donde cada sabor te transporta a un lugar especial.</p>
+                    </div>
+                    <div class="card-action center-align">
+                      <a href="#">This is a link</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+        
+    </main>
+    <footer class="page-footer brown darken-2">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Sabor a Tegus</h5>
+              <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+            </div>
+            <!-- <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          </div>
+        </div>
+    </footer>
+      <script src="./js/script_materialize.js"></script>
+</body>
+</html>
